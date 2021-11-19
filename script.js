@@ -9,7 +9,7 @@ let adjustY = 30;
 const mouse = {
     x :null,
     y :null,
-    radius:150
+    radius:120
 }
 
 window.addEventListener('mousemove',function(event){
@@ -101,7 +101,7 @@ function connect()
 }
 function init(){
     particleArray =[];
-    writeTextByParticles('예희','white','30px Verdana',20);
+    writeTextByParticles('프로그래머 공간','whitesmoke','17px Cute Font',20);
 }
 init();
 
