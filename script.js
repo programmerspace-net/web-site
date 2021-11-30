@@ -1,22 +1,23 @@
-const canvas = document.getElementById('canvas1');
-const ctx = canvas.getContext('2d');
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
-let particleArray =[];
-let adjustX = 7;
-let adjustY = 30;
-
+const canvas = document.getElementById('canvas1')
+const ctx = canvas.getContext('2d')
+canvas.width = window.innerWidth
+canvas.height = window.innerHeight
+let particleArray =[]
+let adjustX = 7
+let adjustY = 30
+let PIXEL_FONT = '17px Cute Font'
 const mouse = {
     x :null,
     y :null,
     radius:120
 }
-
 window.addEventListener('mousemove',function(event){
     mouse.x = event.x;
     mouse.y = event.y;
 });
-
+window.addEventListener('load',function(e){
+    writeTextByParticles('프로그래머 공간','whitesmoke',PIXEL_FONT,20);
+});
 
 class Particle{
     constructor(x,y,color){
@@ -60,7 +61,7 @@ class Particle{
         }
     }
 }
-function writeTextByParticles(text='text',color='white',font='30px Verdana',dt=10){
+function writeTextByParticles(text='text',color='white',font='10px Verdana',dt=10){
     ctx.fillStyle = color;
     ctx.font = font;
     ctx.fillText(text,adjustX,adjustY);
@@ -99,11 +100,7 @@ function connect()
         }
     }
 }
-function init(){
-    particleArray =[];
-    writeTextByParticles('프로그래머 공간','whitesmoke','17px Cute Font',20);
-}
-init();
+
 
 function animate(){
     ctx.clearRect(0,0,canvas.width,canvas.height);

@@ -1,9 +1,15 @@
+@font-face {
+    font-family: 'Cute Font', cursive;
+    src: url('/Cute_Font/CuteFont-Regular.ttf');
+}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box; 
 }
 body{
+    font-family: Cute Font;
+    font: Cute Font;
     overflow: hidden;
     background: black;
 }
@@ -11,5 +17,4 @@ canvas{
     position: absolute;
     top:0;
     left: 0;
-    
 }
