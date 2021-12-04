@@ -5,7 +5,7 @@ canvas.height = window.innerHeight
 let particleArray =[]
 let adjustX = 7
 let adjustY = 30
-let PIXEL_FONT = '17px Cute Font'
+let PIXEL_FONT = '17px UhBeepuding'
 const mouse = {
     x :null,
     y :null,

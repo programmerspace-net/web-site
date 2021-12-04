@@ -1,6 +1,8 @@
 @font-face {
-    font-family: 'Cute Font', cursive;
-    src: url('/Cute_Font/CuteFont-Regular.ttf');
+    font-family: 'UhBeepuding';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_five@.2.0/UhBeepuding.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 * {
     margin: 0;
@@ -8,8 +10,8 @@
     box-sizing: border-box; 
 }
 body{
-    font-family: Cute Font;
-    font: Cute Font;
+    font-family: UhBeepuding;
+    font: UhBeepuding;
     overflow: hidden;
     background: black;
 }
